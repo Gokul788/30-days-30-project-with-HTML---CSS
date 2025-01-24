@@ -151,6 +151,7 @@ body {
         width: 300px;
         height: 100%;
         border-top-right-radius: 0;
+        border-bottom-left-radius: 20px;
     }
 
     .addCartButton {
