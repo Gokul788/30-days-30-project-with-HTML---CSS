@@ -1,0 +1,152 @@
+/* FOnt Import From Google Fonts */
+
+/*  Family: [Outfit] */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/* varaibles */
+:root{
+    --PRIMARYCOLOR: hsl(215, 51%, 70%);
+    --PRIMARYCOLOR2:hsl(178, 100%, 50%);
+    --MAINBACKGROUNDCOLOR:hsl(217, 54%, 11%);
+    --CARDBACKGROUNDCOLOR:hsl(216, 50%, 16%);
+    --LINECOLOR: hsl(215, 32%, 27%);
+    --MAINFONT:"Outfit", serif;;
+}
+/* General Style */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--MAINBACKGROUNDCOLOR);
+}
+
+/* Card Styles */
+
+.card{
+    max-width: 340px;
+    background-color: var(--CARDBACKGROUNDCOLOR);
+    padding: 1.5rem;
+    border-radius: 15px;
+    height:auto;
+}
+
+/* Image Part Styles */
+
+.image_part > img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+/* Card Details Part  */
+
+.card_details{
+    font-family: var(--MAINFONT);
+    margin-top: 1rem;
+
+}
+
+.card_details > h1{
+    font-size: 1.6rem;
+    color: white;
+    font-weight: 500;
+}
+
+.card_details > p{
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.342);;
+    font-weight: 300;
+
+}
+
+.card_value_part{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.eth_part{
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+    font-family: var(--MAINFONT);
+}
+.eth_part > img{
+    width: .8rem;
+}
+
+.eth_part > p {
+    color: var(--PRIMARYCOLOR2);
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.time_duration_part{
+    display: flex;
+    gap: .4rem;
+    font-family: var(--MAINFONT);
+    flex-wrap: nowrap;
+    align-items: center;
+
+}
+.time_duration_part > img{
+    width: 1.1rem;
+}
+.time_duration_part > p{
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.418);
+}
+
+
+/* Creator Part Styles */ 
+
+.creator_part{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 20px;
+}
+.creator_part > img{
+    width: 15%;
+    border: white solid 1.8px;
+    border-radius: 50%;
+}
+
+.creator_part > p{
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.397);
+    font-family: var(--MAINFONT);
+
+}
+.creator_part > p > span{
+    color: rgba(255, 255, 255, 0.699);
+}
+
+
+/* Meadia Quary */ 
+
+
+@media only screen and (orientation: landscape) {
+    body {
+      height: 100%;
+    }
+  }
+
+  @media (min-width:768px){
+    body{
+        height: 100vh;
+    }    
+  } 
+  
+  
+
+  
