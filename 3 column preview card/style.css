@@ -1,0 +1,203 @@
+
+/* Fonts Improt from Google Fonts */
+
+/* Family: [Lexend Deca] */
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+
+/* Family: [Big Shoulders Display] */
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap');
+
+
+/* Variables */ 
+:root{
+    --font-primary:"Lexend Deca", serif;
+    --font-secondary: "Big Shoulders Display", serif;
+    --color-primary: hsl(31, 77%, 52%);
+    --color-primary-2:hsl(184, 100%, 22%);
+    --color-primary-3: hsl(179, 100%, 13%);
+}
+
+/* Genteral Styles */ 
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.preview-card{
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+/* Sedans Container Styles */ 
+
+.sedans-container{
+    background-color: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2rem;
+    font-family: var(--font-secondary);
+    margin-top: 2rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.sedans-container__image{
+    width: 25%;
+    margin-bottom: 2rem;
+}
+
+.sedans-container__title{
+    color: white;
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+}
+
+.sedans-container__description{
+    font-family: var(--font-primary);
+    color: rgba(255, 255, 255, 0.678);
+    font-size: .9rem;
+    line-height: 22px;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+
+}
+.sedans-container__button{
+    width: 60%;
+    border-radius: 40px;
+    padding:  1rem 1rem;
+    border: none;
+    color: var(--color-primary);
+}
+
+/* Suvs Container */
+
+.suvs-container{
+    background-color: var(--color-primary-2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2rem;
+    font-family: var(--font-secondary);
+}
+
+.suvs-container__image{
+    width: 25%;
+    margin-bottom: 2rem; 
+}
+
+.suvs-container__title{
+    color: white;
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+}
+
+.suvs-container__description{
+    font-family: var(--font-primary);
+    color: rgba(255, 255, 255, 0.678);
+    font-size: .9rem;
+    line-height: 22px;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+}
+
+.suvs-container__button{
+    width: 60%;
+    border-radius: 40px;
+    padding:  1rem 1rem;
+    border: none;
+    color: var(--color-primary-2);
+}
+
+/* Luxury Container style  */ 
+
+.luxury-container{
+    background-color: var(--color-primary-3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2rem;
+    font-family: var(--font-secondary);
+    margin-bottom: 2rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+.luxury-container__image{
+    width: 25%;
+    margin-bottom: 2rem; 
+}
+
+
+.luxury-container__title{
+    color: white;
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+}
+
+.luxury-container__description{
+    font-family: var(--font-primary);
+    color: rgba(255, 255, 255, 0.678);
+    font-size: .9rem;
+    line-height: 22px;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+}
+
+.luxury-container__button{
+    width: 60%;
+    border-radius: 40px;
+    padding:  1rem 1rem;
+    border: none;
+    color: var(--color-primary-3);
+}
+
+/* media quary */
+
+@media (min-width:768px) {
+
+    body{
+        height: 100vh;
+    }
+
+    .preview-card{
+        max-width: 750px;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .sedans-container {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        margin-top: 0;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    .luxury-container {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        margin-bottom: 0;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+
+}
